@@ -5,11 +5,11 @@ def get_logger(name: str) -> logging.Logger:
     Get a logger with the specified name.
     """
     logger = logging.getLogger(name)
-    logger.setLevel(logging.DEBUG)
+    logger.setLevel(logging.INFO)
 
     # Create console handler and set level to debug
     ch = logging.StreamHandler()
-    ch.setLevel(logging.DEBUG)
+    ch.setLevel(logging.INFO)
 
     # Create formatter (include file and line number)
     formatter = logging.Formatter('%(asctime)s [%(levelname)s] %(name)s - %(filename)s:%(lineno)d - %(message)s', datefmt='%Y-%m-%d %H:%M:%S')

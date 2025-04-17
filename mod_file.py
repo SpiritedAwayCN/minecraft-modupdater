@@ -27,7 +27,7 @@ class CurseForgeModFile(ModFile):
     def __init__(self, game_version: str, file_data: Dict):
         download_url = file_data.get('downloadUrl')
         if not download_url:
-            logger.warning(f"File data does not contain downloadUrl: {file_data}, will deduct from fileId, may not work.")
+            logger.warning(f"File data does not contain downloadUrl: {file_data['fileName']}, will deduct from fileId, may not work.")
             file_id = file_data.get('id', 0)
             seg_1, seg_2 = file_id // 1000, file_id % 1000
             download_url = f"https://edge.forgecdn.net/files/{seg_1}/{seg_2}/{file_data['fileName']}"
