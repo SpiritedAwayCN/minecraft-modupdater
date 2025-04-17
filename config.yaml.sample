@@ -1,0 +1,24 @@
+modlist_file: mod整合包.xlsx
+game_version: 1.21.5
+output_dir: ./mods
+mod_loader: fabric
+max_downloads: 5 # Max number of mods to download at once
+curseforge: 
+  api_key: xxxxxx  # obtain from https://console.curseforge.com/#/api-keys
+  api_url: https://api.curseforge.com/v1/
+  cache_dir: ./.cache
+  cache_expire: 1 # day(s). Support float
+  verify_id_consistency: warn # [error, warn, ignore]
+  checks_after_latest: 5 # Number of additional checks after detecting the latest version
+github:
+  api_key: yyyyyy # obtain from https://github.com/settings/tokens
+  api_url: https://api.github.com/
+  cache_dir: ./.cache
+  cache_expire: 1 # day(s). Support float
+  checks_after_latest: 5 # Number of additional checks after detecting the latest version
+modrinth:
+  api_key: zzzzzz # obtain from https://modrinth.com/settings/pats
+  api_url: https://api.modrinth.com/v2/
+  cache_dir: ./.cache
+  cache_expire: 1 # day(s). Support float
+  checks_after_latest: 5 # Number of additional checks after detecting the latest version

@@ -1,0 +1,10 @@
+.cache
+.vscode
+__pycache__
+
+mods
+~$*.xlsx
+
+.debug
+.debug_output
+config.yaml
